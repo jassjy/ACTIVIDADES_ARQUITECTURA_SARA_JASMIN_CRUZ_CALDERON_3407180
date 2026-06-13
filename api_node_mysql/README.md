@@ -1,6 +1,5 @@
-================================================================================
+
                     API NODE.JS + MYSQL - DOCUMENTACIÓN COMPLETA
-================================================================================
 
 ÍNDICE
 1. DESCRIPCIÓN GENERAL
@@ -13,9 +12,8 @@
 8. CARACTERÍSTICAS DE SEGURIDAD
 9. RESPUESTAS DE LA API
 
-================================================================================
+
 1. DESCRIPCIÓN GENERAL
-================================================================================
 
 He creado una API RESTful completa usando Node.js y MySQL. Esta API permite 
 gestionar usuarios y productos con operaciones CRUD (Crear, Leer, Actualizar, 
@@ -24,9 +22,9 @@ Eliminar). Incluye un sistema de login básico con encriptación de contraseñas
 La API sigue una arquitectura en capas (MVC - Modelo Vista Controlador) para 
 mantener el código organizado, modular y fácil de mantener.
 
-================================================================================
+
 2. ESTRUCTURA DEL PROYECTO
-================================================================================
+
 
 API_NODE_MYSQL/
 │
@@ -49,9 +47,9 @@ API_NODE_MYSQL/
 ├── package-lock.json             # Versiones exactas de dependencias
 └── README.txt                    # Este archivo de documentación
 
-================================================================================
+
 3. TECNOLOGÍAS UTILIZADAS
-================================================================================
+
 
 Tecnología         | Versión | Función
 -------------------|---------|----------------------------------------
@@ -64,9 +62,9 @@ dotenv            | v16.3.1 | Gestión de variables de entorno
 cors              | v2.8.5  | Permitir peticiones desde otros dominios
 nodemon           | v3.0.1  | Reinicio automático del servidor (desarrollo)
 
-================================================================================
+
 4. ARCHIVOS CREADOS Y SU FUNCIÓN
-================================================================================
+
 
 4.1 package.json
 --------------------
@@ -194,9 +192,9 @@ Contenido:
 - Comandos para ejecutar (npm run dev, npm start)
 - Ejemplos de peticiones con cURL
 
-================================================================================
+
 5. ENDPOINTS DE LA API
-================================================================================
+
 
 MÓDULO DE USUARIOS (base: http://localhost:3000/api/usuarios)
 
@@ -221,7 +219,7 @@ DELETE   | /:id                  | Eliminar producto
 
 ================================================================================
 6. EJEMPLOS DE USO
-================================================================================
+
 
 6.1 REGISTRAR USUARIO (POST /api/usuarios)
 
@@ -336,9 +334,9 @@ Respuesta:
     "error": null
 }
 
-================================================================================
+
 7. INSTRUCCIONES DE INSTALACIÓN
-================================================================================
+
 
 PASO 1: Instalar Node.js
 ------------------------------------------------
@@ -391,9 +389,8 @@ PASO 9: Probar la API
 Abrir navegador: http://localhost:3000
 Usar Postman, Insomnia o cURL para probar endpoints
 
-================================================================================
 8. CARACTERÍSTICAS DE SEGURIDAD
-================================================================================
+
 
 8.1 SQL PARAMETRIZADO (PREPARED STATEMENTS)
 ------------------------------------------------
@@ -430,9 +427,9 @@ Ejemplo de hash generado:
 - Permite peticiones desde otros dominios (útil para frontend separado)
 - En producción se puede restringir a dominios específicos
 
-================================================================================
+
 9. RESPUESTAS DE LA API
-================================================================================
+
 
 Todas las respuestas siguen un formato UNIFICADO para facilitar el consumo.
 
@@ -465,9 +462,9 @@ ROUTE_NOT_FOUND           | Ruta no existe
 404 - Not Found: Recurso no encontrado
 500 - Internal Server Error: Error en el servidor
 
-================================================================================
+
 10. POSIBLES MEJORAS FUTURAS (OPCIONALES)
-================================================================================
+
 
 - Agregar autenticación con JWT (JSON Web Tokens)
 - Implementar refresh tokens
@@ -479,9 +476,9 @@ ROUTE_NOT_FOUND           | Ruta no existe
 - Rate limiting para prevenir ataques de fuerza bruta
 - Validación de datos con express-validator
 
-================================================================================
+
 11. SOLUCIÓN DE PROBLEMAS COMUNES
-================================================================================
+
 
 ERROR: "Cannot find module 'express'"
 Solución: Ejecutar npm install
@@ -498,12 +495,11 @@ Solución: Cambiar PORT en .env o matar proceso en ese puerto
 ERROR: "Connection refused"
 Solución: Verificar que MySQL esté corriendo
 
-================================================================================
-12. CONCLUSIÓN
-================================================================================
 
-Este proyecto demuestra la implementación completa de una API REST profesional
-con Node.js y MySQL, siguiendo las mejores prácticas de desarrollo:
+12. CONCLUSIÓN
+
+
+Este proyecto demuestra la implementación completa de una API REST con Node.js y MySQL, siguiendo las mejores prácticas de desarrollo:
 
 ✓ Arquitectura en capas (MVC)
 ✓ Código modular y organizado
