@@ -1,0 +1,5 @@
+fastapi[standard]
+asyncpg
+bcrypt
+python-dotenv
+pydantic[email]
